@@ -1,0 +1,22 @@
+@import '../../scss/config';
+
+
+#screen-container {
+    background-color: $screen_bg;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+    font-family: $screen_font;
+
+    #formula {
+        font-size: 1rem;
+    }
+
+    #display {
+        font-size: 2rem;
+    }
+}
+

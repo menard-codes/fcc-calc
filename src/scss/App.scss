@@ -1,0 +1,19 @@
+@import './config';
+
+
+#app {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    &__calculator {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        width: 25vw;
+        background-color: $calc_bg;
+        border-radius: 8px;
+    }
+}
+

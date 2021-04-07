@@ -1,0 +1,11 @@
+
+
+$button-font-size: 3rem;
+
+@mixin light_color($color) {
+    background-color: lighten($color, 20);
+}
+
+@mixin dark_color($color) {
+    background-color: darken($color, 5);
+}

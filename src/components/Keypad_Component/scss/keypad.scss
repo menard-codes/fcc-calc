@@ -1,0 +1,85 @@
+@import '../../../scss/config';
+@import './keypad_properties';
+
+#calc_keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .button {
+        font-family: $button-font;
+        font-size: $button-font-size;
+        margin: 0.3rem;
+        cursor: pointer;
+        border-radius: 20px;
+        border: none;
+    }
+
+    // clear means the delete button
+    #clear {
+        background-color: $del_bg;
+        grid-column: 1/3;
+
+        &:hover {
+            @include light_color($del_bg);
+        }
+
+        &:active {
+            @include dark_color($del_bg);
+        }
+    }
+
+    .operator {
+        background-color: $operator_bg;
+
+        &:hover {
+            @include light_color($operator_bg);
+        }
+
+        &:active {
+            @include dark_color($operator_bg);
+        }
+    }
+
+    .number {
+        background-color: $num_bg;
+
+        &:hover {
+            @include light_color($num_bg);
+        }
+
+        &:active {
+            @include dark_color($num_bg);
+        }
+    }
+
+    #zero {
+        grid-column: 1/3;
+    }
+
+    #decimal {
+        background-color: $decimal_bg;
+
+        &:hover {
+            @include light_color($decimal_bg);
+        }
+
+        &:active {
+            @include dark_color($decimal_bg);
+        }
+    }
+
+    #equal {
+        grid-area: 4/4/6/5;
+        background-color: $equal_bg;
+
+        &:hover {
+            @include light_color($equal_bg);
+        }
+
+        &:active {
+            @include dark_color($equal_bg);
+        }
+    }
+}
+
+
